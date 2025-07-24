@@ -55,7 +55,7 @@ def chandravalli_details():
     st.markdown("***Factors Affecting in Chandravalli***")
 
     # --- Grid of 4 Images ---
-    p1 = r"C:\Users\harshith maradi b r\Documents\Downloads\Prohibited\web streamlit\personal finance tracker\personal finance tracker\images\chandravalli.jpeg.jpg"
+    p1 = images/chandravalli.jpeg.jpg
     p2 = r"C:\Users\harshith maradi b r\Documents\Downloads\Prohibited\web streamlit\personal finance tracker\personal finance tracker\images\IMG-20250703-WA0032.jpg"
     p3 = r"C:\Users\harshith maradi b r\Documents\Downloads\Prohibited\web streamlit\personal finance tracker\personal finance tracker\images\IMG-20250703-WA0014.jpg"
     p4 = r"C:\Users\harshith maradi b r\Documents\Downloads\Prohibited\web streamlit\personal finance tracker\personal finance tracker\images\IMG-20250703-WA0031.jpg"
