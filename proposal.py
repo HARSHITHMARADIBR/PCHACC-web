@@ -130,7 +130,7 @@ def proposal():
     )
     st.markdown("***Landuse Analysis chart***")
 
-    Pro7 =r"C:\Users\harshith maradi b r\Documents\Downloads\Prohibited\web streamlit\personal finance tracker\personal finance tracker\images\plot analysis table.png"
+    Pro7 =images/plot analysis table.png
     with open(Pro7, "rb") as image_file:
         encoded_image = base64.b64encode(image_file.read()).decode()
     st.markdown(
