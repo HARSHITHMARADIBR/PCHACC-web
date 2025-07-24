@@ -54,7 +54,7 @@ def barageramma_temple():
     
     st.markdown("***Factors affecting in Barageramma Temple***")
 
-    p1 = r"C:\Users\harshith maradi b r\Documents\Downloads\Prohibited\web streamlit\personal finance tracker\personal finance tracker\images\baregeramma temple.jpeg.jpg"
+    p1 = images/baregeramma temple.jpeg.jpg
     p2 = r"C:\Users\harshith maradi b r\Documents\Downloads\Prohibited\web streamlit\personal finance tracker\personal finance tracker\images\IMG-20250703-WA0039.jpg"
     # Create 3 columns
     col1, col2 = st.columns(2)
