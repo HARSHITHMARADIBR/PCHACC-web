@@ -12,7 +12,7 @@ def barageramma_temple():
     st.write('''Barageramma Temple (Hindu temple), Coordinates: 14°13'07.2"N 76°23'18.6"E 699Q+F99, Davalagiri Bhadavane 1st Phase, Kavadigarahatti Layout, Chitradurga, Karnataka 577501, India
  ''')
     
-    bara1=r"C:\Users\harshith maradi b r\Documents\Downloads\Prohibited\web streamlit\personal finance tracker\personal finance tracker\images\IMG-20250703-WA0041.jpg"
+    bara1=images/IMG-20250703-WA0041.jpg
     with open(bara1, "rb") as image_file:
         encoded_image = base64.b64encode(image_file.read()).decode()
     st.markdown(
