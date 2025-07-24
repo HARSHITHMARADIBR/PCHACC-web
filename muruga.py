@@ -62,7 +62,7 @@ Sri Jagadguru Murugharajendra Vidyapeetha, was established in 1964. It was found
 
     p1 = images/muruga mutt.jpg
     p2 = images/IMG-20250703-WA0010.jpg
-    p3 = r"C:\Users\harshith maradi b r\Documents\Downloads\Prohibited\web streamlit\personal finance tracker\personal finance tracker\images\IMG-20250703-WA0034.jpg"
+    p3 = images/IMG-20250703-WA0034.jpg
 
     # Create 3 columns
     col1, col2 , col3 = st.columns(3)
