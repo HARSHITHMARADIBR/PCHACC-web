@@ -58,7 +58,7 @@ def rangayyana_baagilu():
 
     from PIL import Image as PILImage  # Add this at the top if not already present
 
-    p1 = r"C:\Users\harshith maradi b r\Documents\Downloads\Prohibited\web streamlit\personal finance tracker\personal finance tracker\images\Rangayyana Baagilu.png"
+    p1 = images/Rangayyana Baagilu.png
     p2 = r"C:\Users\harshith maradi b r\Documents\Downloads\Prohibited\web streamlit\personal finance tracker\personal finance tracker\images\IMG-20250703-WA0035.jpg"
     p3 = r"C:\Users\harshith maradi b r\Documents\Downloads\Prohibited\web streamlit\personal finance tracker\personal finance tracker\images\IMG-20250703-WA0020.jpg"
 
