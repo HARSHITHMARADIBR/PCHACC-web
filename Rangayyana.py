@@ -42,7 +42,7 @@ def rangayyana_baagilu():
     
     st.markdown("***Landuse Table of Rangayyana Baagilu***")
 
-    ran3=r"C:\Users\harshith maradi b r\Documents\Downloads\Prohibited\web streamlit\personal finance tracker\personal finance tracker\images\IMG-20250703-WA0023.jpg"
+    ran3=images/IMG-20250703-WA0023.jpg
     with open(ran3, "rb") as image_file:
         encoded_image = base64.b64encode(image_file.read()).decode()
     st.markdown(
