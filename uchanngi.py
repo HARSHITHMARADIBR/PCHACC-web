@@ -56,7 +56,7 @@ def uchhangellamma_temple():
     
     st.markdown("***Factors affecting in Ucchangellamma Temple***")
 
-    p1 = r"C:\Users\harshith maradi b r\Documents\Downloads\Prohibited\web streamlit\personal finance tracker\personal finance tracker\images\uchhangellamma temple.png"
+    p1 = images/uchhangellamma temple.png
     p2 = r"C:\Users\harshith maradi b r\Documents\Downloads\Prohibited\web streamlit\personal finance tracker\personal finance tracker\images\IMG-20250703-WA0029.jpg"
 
     # Create 3 columns
