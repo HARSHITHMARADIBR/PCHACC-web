@@ -28,7 +28,7 @@ def uchhangellamma_temple():
     
     st.markdown("***Landuse Map of Ucchangellamma Temple***")
 
-    uchn2=r"C:\Users\harshith maradi b r\Documents\Downloads\Prohibited\web streamlit\personal finance tracker\personal finance tracker\images\IMG-20250703-WA0022.jpg"
+    uchn2=images/IMG-20250703-WA0022.jpg
     with open(uchn2, "rb") as image_file:
         encoded_image = base64.b64encode(image_file.read()).decode()
     st.markdown(
