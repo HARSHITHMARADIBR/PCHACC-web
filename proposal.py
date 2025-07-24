@@ -91,7 +91,7 @@ def proposal():
     - Vegetation: Vegetation can be seen on the north and south Western and South Western region
     """)
 
-    Pro4 =r"C:\Users\harshith maradi b r\Documents\Downloads\Prohibited\web streamlit\personal finance tracker\personal finance tracker\images\Ingaldallayoutdesign.jpg"
+    Pro4 =images/Ingaldallayoutdesign.jpg
     with open(Pro4, "rb") as image_file:
         encoded_image = base64.b64encode(image_file.read()).decode()
     st.markdown(
