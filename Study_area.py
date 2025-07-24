@@ -48,7 +48,7 @@ def study_area():
     )
     st.markdown("***Base Map***")
 
-    Land_Use_Map = r"C:\Users\harshith maradi b r\Documents\Downloads\Prohibited\web streamlit\personal finance tracker\personal finance tracker\images\landusemap.jpg"
+    Land_Use_Map = images/landusemap.jpg
     with open(Land_Use_Map, "rb") as image_file:
         encoded_image = base64.b64encode(image_file.read()).decode()
     st.markdown(
