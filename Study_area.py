@@ -35,7 +35,7 @@ def study_area():
 
     st.write('''Chitradurga is located at 14.23°N 76.4°E. City area is of 62 sq km and rural area is of 1350.76 sq km. It has an average elevation of 732 metres (2401 ft). Chitradurga city is well connected to Bangalore, Mysore, Mangalore, Davanagere, Hubli, Hospet, Bellary, Shimoga, Tumkur, Bijapur, Belgaum by road and through railways it is  200 km (124.3 mi) from Bangalore. Chitradurga railway line is connected to main line at Chikkajajur Bangalore/Mysore – Arasikere broad gauge railway line. in the heart of the Deccan Plateau, Chitradurga is recognized as the land of valour and chivalry. The district headquarters town, Chitradurga owes its name to “Chitrakaladurga,” or “Picturesque castle”. This is a massive fortress on top of granite hills that rises dramatically from the ground. Archaeological remains found in the area, trace its history to the 3rd millennium B.C.''')
     
-    Base_Map = r"C:\Users\harshith maradi b r\Documents\Downloads\Prohibited\web streamlit\personal finance tracker\personal finance tracker\images\basemap.jpg"
+    Base_Map = images/basemap.jpg
     with open(Base_Map, "rb") as image_file:
         encoded_image = base64.b64encode(image_file.read()).decode()
     st.markdown(
