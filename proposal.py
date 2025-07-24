@@ -39,7 +39,7 @@ def proposal():
     - The land under government possession near **Ingaldalu Village** beside the National Highway (Survey No: 79, **128.91538041 hectares**) will be used to **relocate people** currently living in **prohibited heritage zones** in Chitradurga City.
     """)
 
-    Pro1 = r"C:\Users\harshith maradi b r\Documents\Downloads\Prohibited\web streamlit\personal finance tracker\personal finance tracker\images\IMG-20250703-WA0040.jpg"
+    Pro1 = images/IMG-20250703-WA0040.jpg
     with open(Pro1, "rb") as image_file:
         encoded_image = base64.b64encode(image_file.read()).decode()
     st.markdown(
