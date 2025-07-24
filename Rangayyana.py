@@ -28,7 +28,7 @@ def rangayyana_baagilu():
     
     st.markdown("***Landuse Map of Rangayyana Baagilu***")
 
-    ran2=r"C:\Users\harshith maradi b r\Documents\Downloads\Prohibited\web streamlit\personal finance tracker\personal finance tracker\images\IMG-20250703-WA0019.jpg"
+    ran2=images/IMG-20250703-WA0019.jpg
     with open(ran2, "rb") as image_file:
         encoded_image = base64.b64encode(image_file.read()).decode()
     st.markdown(
