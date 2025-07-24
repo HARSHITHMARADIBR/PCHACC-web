@@ -1,70 +1,96 @@
-import streamlit as st
 import base64
+import streamlit as st
 from PIL import Image as PILImage
 
 def uchhangellamma_temple():
-    st.title("Ucchangellamma Temple")
+    st.title("Uchhangellamma Temple")
+
     if st.sidebar.button("Home"):
         st.session_state.page = "home"
         st.rerun()
 
-    st.write('''Shri Ucchangi Devi Devasthana (Hindu temple) ''')
-    st.write('''Coordinates: 14°13'13.2"N 76°23'57.3"E''')
-    st.write('Address : 69CX+4MQ, Doddapete Main Rd, Chickpet, Chitradurga, Karnataka 577501, India The Uchangi Yellamma temple is located in Chitra city, Chitradurga district.')
-    st.write('''It is located on the way to Fort in Chikkapete. Yellamma popularly known as Renuka Yellamma is powerful deity in the town and this temple is facing east direction which has various mandapams. This temple was constructed in Vijayanagar style of architecture. This temple was constructed by Madakari Nayaka dynasty and believed to be their goddess.
-''')
-    
-    uchn1=images/IMG-20250703-WA0044.jpg
-    with open(uchn1, "rb") as image_file:
-        encoded_image = base64.b64encode(image_file.read()).decode()
-    st.markdown(
-        f"""
-        <h1 style="display: flex; align-items: center;">
-            <img src="data:image/jpeg;base64,{encoded_image}" width="500" style="margin-right:100px;">
-        </h1>
-        """,
-        unsafe_allow_html=True
-    )
-    
-    st.markdown("***Landuse Map of Ucchangellamma Temple***")
+    st.write('''Uchchangellamma Temple is an important religious site located in the Chitradurga Fort complex. The temple is dedicated to Uchchangellamma, the family deity of the Nayakas of Chitradurga, who ruled the region during the post-Vijayanagar period.''')
+    st.write('''Location: Chitradurga Fort Complex, Chitradurga, Karnataka 577501''')
+    st.write('Coordinates: 14.2220° N, 76.3999° E')
+    st.write('''The temple stands as a testimony to the cultural and spiritual heritage of the region. Its traditional architecture and religious significance attract both tourists and devotees alike.''')
 
-    uchn2=images/IMG-20250703-WA0022.jpg
-    with open(uchn2, "rb") as image_file:
-        encoded_image = base64.b64encode(image_file.read()).decode()
-    st.markdown(
-        f"""
-        <h1 style="display: flex; align-items: center;">
-            <img src="data:image/jpeg;base64,{encoded_image}" width="500" style="margin-right:100px;">
-        </h1>
-        """,
-        unsafe_allow_html=True
-    )
-    
-    st.markdown("***Landuse Table of Ucchangellamma Temple***")
+    # Image 1
+    img1 = "images/IMG-20250703-WA0011.jpg"
+    try:
+        with open(img1, "rb") as image_file:
+            encoded_image = base64.b64encode(image_file.read()).decode()
+        st.markdown(
+            f"""
+            <h1 style="display: flex; align-items: center;">
+                <img src="data:image/jpeg;base64,{encoded_image}" width="500" style="margin-right:100px;">
+            </h1>
+            """,
+            unsafe_allow_html=True
+        )
+    except FileNotFoundError:
+        st.warning(f"Image not found: {img1}")
 
-    uchn3=images/IMG-20250703-WA0048.jpg
-    with open(uchn3, "rb") as image_file:
-        encoded_image = base64.b64encode(image_file.read()).decode()
-    st.markdown(
-        f"""
-        <h1 style="display: flex; align-items: center;">
-            <img src="data:image/jpeg;base64,{encoded_image}" width="500" style="margin-right:100px;">
-        </h1>
-        """,
-        unsafe_allow_html=True
-    )
-    
-    st.markdown("***Factors affecting in Ucchangellamma Temple***")
+    st.markdown("***Landuse Map of Uchhangellamma Temple***")
 
-    p1 = images/uchhangellamma temple.png
-    p2 = images/IMG-20250703-WA0029.jpg
+    # Image 2
+    img2 = "images/IMG-20250703-WA0016.jpg"
+    try:
+        with open(img2, "rb") as image_file:
+            encoded_image = base64.b64encode(image_file.read()).decode()
+        st.markdown(
+            f"""
+            <h1 style="display: flex; align-items: center;">
+                <img src="data:image/jpeg;base64,{encoded_image}" width="500" style="margin-right:100px;">
+            </h1>
+            """,
+            unsafe_allow_html=True
+        )
+    except FileNotFoundError:
+        st.warning(f"Image not found: {img2}")
 
-    # Create 3 columns
-    col1, col2 = st.columns(2)
+    st.markdown("***Landuse Table of Uchhangellamma Temple***")
 
-    # Display images with same width in each column
-    with col1:
-        st.image(PILImage.open(p1), caption="Ucchangellamma Temple", use_container_width=True)
-    with col2:
-        st.image(PILImage.open(p2), caption="Providing Traffic signal", use_container_width=True)
-    
+    # Image 3
+    img3 = "images/IMG-20250703-WA0025.jpg"
+    try:
+        with open(img3, "rb") as image_file:
+            encoded_image = base64.b64encode(image_file.read()).decode()
+        st.markdown(
+            f"""
+            <h1 style="display: flex; align-items: center;">
+                <img src="data:image/jpeg;base64,{encoded_image}" width="500" style="margin-right:100px;">
+            </h1>
+            """,
+            unsafe_allow_html=True
+        )
+    except FileNotFoundError:
+        st.warning(f"Image not found: {img3}")
+
+    st.markdown("***Factors affecting Uchhangellamma Temple Area***")
+
+    # Grid Images
+    p1 = "images/Uchhangellamma_Temple.png"
+    p2 = "images/IMG-20250703-WA0037.jpg"
+    p3 = "images/IMG-20250703-WA0022.jpg"
+
+    col1, col2, col3 = st.columns(3)
+    try:
+        with col1:
+            st.image(PILImage.open(p1), caption="Uchhangellamma Temple", use_container_width=True)
+    except FileNotFoundError:
+        with col1:
+            st.warning(f"Missing: {p1}")
+
+    try:
+        with col2:
+            st.image(PILImage.open(p2), caption="Pedestrian Movement", use_container_width=True)
+    except FileNotFoundError:
+        with col2:
+            st.warning(f"Missing: {p2}")
+
+    try:
+        with col3:
+            st.image(PILImage.open(p3), caption="Encroachment near temple", use_container_width=True)
+    except FileNotFoundError:
+        with col3:
+            st.warning(f"Missing: {p3}")
