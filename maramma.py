@@ -12,7 +12,7 @@ def maramma_temple():
 69CM+PR4, Nehru Nagar, Chitradurga, Karnataka 577501, India
  ''')
     
-    mara1=r"C:\Users\harshith maradi b r\Documents\Downloads\Prohibited\web streamlit\personal finance tracker\personal finance tracker\images\IMG-20250703-WA0018.jpg"
+    mara1=images/IMG-20250703-WA0018.jpg
     with open(mara1, "rb") as image_file:
         encoded_image = base64.b64encode(image_file.read()).decode()
     st.markdown(
