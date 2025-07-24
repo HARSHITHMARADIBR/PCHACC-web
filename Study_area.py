@@ -62,7 +62,7 @@ def study_area():
     st.markdown("***Land Use Map***")
 
     # LPA Map (FIXED)
-    LPA_map = r"C:\Users\harshith maradi b r\Documents\Downloads\Prohibited\web streamlit\personal finance tracker\personal finance tracker\images\lpamap.jpg"
+    LPA_map = images/lpamap.jpg
     with open(LPA_map, "rb") as image_file:
         encoded_image = base64.b64encode(image_file.read()).decode()
     st.markdown(
