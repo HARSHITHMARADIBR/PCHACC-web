@@ -65,7 +65,7 @@ def proposal():
     )
     st.markdown("***Major locations from Proposed Site***")
     
-    Pro3 =r"C:\Users\harshith maradi b r\Documents\Downloads\Prohibited\web streamlit\personal finance tracker\personal finance tracker\images\IMG-20250703-WA0012.jpg"
+    Pro3 =images/IMG-20250703-WA0012.jpg
     with open(Pro3, "rb") as image_file:
         encoded_image = base64.b64encode(image_file.read()).decode()
     st.markdown(
