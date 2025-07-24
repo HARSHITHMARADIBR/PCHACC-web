@@ -46,7 +46,7 @@ def chandravalli_details():
     st.markdown("***Landuse Table of Chandravalli***")
 
     # --- Image 3: Factors Affecting ---
-    tablec2 = r"C:\Users\harshith maradi b r\Documents\Downloads\Prohibited\web streamlit\personal finance tracker\personal finance tracker\images\IMG-20250703-WA0026.jpg"
+    tablec2 = images/IMG-20250703-WA0026.jpg
     with open(tablec2, "rb") as image_file:
         encoded_image = base64.b64encode(image_file.read()).decode()
     st.markdown(f"""
