@@ -14,7 +14,7 @@ def rangayyana_baagilu():
     st.write('''This is part of the outer fortifications. It is named after Nirthadi Ranganatha, the family deity of the Nayakas of Chitradurga. It appears to have been originally built in the last days of Vijayanagara and is ornamented with sculptures of Gandabherunda, Ganesa and other deities. The fort wall on either side (height about7.5 m) is made of large finely dressed blocks of granite and was a formidable obstacle to the enemy. A museum maintained by the Commissionerate of Archaeology and Museums; Govt of Karnataka is located near this gateway
 ''')
     
-    ran1= images/IMG-20250703-WA0009.jpg
+    ran1=images/IMG-20250703-WA0009.jpg
     with open(ran1, "rb") as image_file:
         encoded_image = base64.b64encode(image_file.read()).decode()
     st.markdown(
