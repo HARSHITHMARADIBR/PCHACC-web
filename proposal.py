@@ -104,7 +104,7 @@ def proposal():
     )
     st.markdown("***Layout Design of 79 Survey number***")
 
-    Pro5 =r"C:\Users\harshith maradi b r\Documents\Downloads\Prohibited\web streamlit\personal finance tracker\personal finance tracker\images\Screenshot 2025-07-22 201450.png"
+    Pro5 =images/Screenshot 2025-07-22 201450.png
     with open(Pro5, "rb") as image_file:
         encoded_image = base64.b64encode(image_file.read()).decode()
     st.markdown(
