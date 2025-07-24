@@ -33,7 +33,7 @@ Other Structures
     st.markdown("***Land Use Map Of Chitradurga Fort***") 
 
     # ✅ Display Table 1
-    Table1 = r"C:\Users\harshith maradi b r\Documents\Downloads\Prohibited\web streamlit\personal finance tracker\personal finance tracker\images\IMG-20250703-WA0008.jpg"
+    Table1 = "images/IMG-20250703-WA0008.jpg"
 
     with open(Table1, "rb") as image_file:
         encoded_image = base64.b64encode(image_file.read()).decode()
