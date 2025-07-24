@@ -6,7 +6,7 @@ def study_area():
        st.session_state.page = "home"
        st.rerun()
     st.title("STUDY AREA")
-    cta_map=r"C:\Users\harshith maradi b r\Documents\Downloads\Prohibited\web streamlit\personal finance tracker\personal finance tracker\images\WhatsApp Image 2025-07-01 at 14.33.51_73550ff3.jpg"
+    cta_map=images/WhatsApp Image 2025-07-01 at 14.33.51_73550ff3.jpg
     with open(cta_map, "rb") as image_file:
         encoded_image = base64.b64encode(image_file.read()).decode()
     st.markdown(
