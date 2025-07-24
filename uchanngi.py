@@ -14,7 +14,7 @@ def uchhangellamma_temple():
     st.write('''It is located on the way to Fort in Chikkapete. Yellamma popularly known as Renuka Yellamma is powerful deity in the town and this temple is facing east direction which has various mandapams. This temple was constructed in Vijayanagar style of architecture. This temple was constructed by Madakari Nayaka dynasty and believed to be their goddess.
 ''')
     
-    uchn1=r"C:\Users\harshith maradi b r\Documents\Downloads\Prohibited\web streamlit\personal finance tracker\personal finance tracker\images\IMG-20250703-WA0044.jpg"
+    uchn1=images/IMG-20250703-WA0044.jpg
     with open(uchn1, "rb") as image_file:
         encoded_image = base64.b64encode(image_file.read()).decode()
     st.markdown(
