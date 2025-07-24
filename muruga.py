@@ -1,77 +1,56 @@
-import streamlit as st
 import base64
+import streamlit as st
 from PIL import Image as PILImage
 
 def murugha_mata():
-    st.title("Murugha Mata")
+    st.title("Murugha Matha, Chitradurga")
+
     if st.sidebar.button("Home"):
         st.session_state.page = "home"
         st.rerun()
 
-       
-    st.write('''Sri Murugha Mata (Museum, Hindu temple, Park): ''')
-    st.write('''Coordinates: 14°14'12.5"N 76°22'37.6"E
-69PG+PR9, NH-4, Kavadigarahatti Layout, Chitradurga, Karnataka 577502, India ''')
-    st.write('''Area : 17.59 Ha (43.46 acres) ''')
-    st.write('''The first Murugha Rajendra Mutha at Chitradurga was built on the Chinmuladri hills by Palegar Bichugatti Bharamanna Nayaka. Later it was shifted to the present muth in 1703 AD which is situated at the left side of Chitradurga-Davanagere road near M.K.Hatti.
-Now the 27th Pontiff of the order Sri Shivamurthy Murugha Rajendra Sharanaru prerides over the Muth.
-Sri Jagadguru Murugharajendra Vidyapeetha, was established in 1964. It was founded by His Holiness Jagadguru Sri Sri Mallikarjua Murugharajendra Mahaswamiji, the then pontiff of the mutt. The mutt's purpose is to provide education and cultural institutions to the common people in rural and remote areas, particularly those in Chitradurga. 
- ''')
-    
-    muru1=images/IMG-20250703-WA0015.jpg
-    with open(muru1, "rb") as image_file:
-        encoded_image = base64.b64encode(image_file.read()).decode()
-    st.markdown(
-        f"""
-        <h1 style="display: flex; align-items: center;">
-            <img src="data:image/jpeg;base64,{encoded_image}" width="500" style="margin-right:100px;">
-        </h1>
-        """,
-        unsafe_allow_html=True
-    )
-    
-    st.markdown("***Landuse Map of Murugha Mata***")
+    st.write("""
+    Murugha Matha is a prominent religious and spiritual institution in Chitradurga,
+    known for its social and educational contributions.
+    """)
 
-    muru2=images/IMG-20250703-WA0030.jpg
-    with open(muru2, "rb") as image_file:
-        encoded_image = base64.b64encode(image_file.read()).decode()
-    st.markdown(
-        f"""
-        <h1 style="display: flex; align-items: center;">
-            <img src="data:image/jpeg;base64,{encoded_image}" width="500" style="margin-right:100px;">
-        </h1>
-        """,
-        unsafe_allow_html=True
-    )
-    
-    st.markdown("***Landuse Table of Murugha Mata***")
+    st.write("**Location:** Chitradurga, Karnataka")
+    st.write("**Coordinates:** 14.2300° N, 76.4000° E")
 
-    muru3=images/IMG-20250703-WA0033.jpg
-    with open(muru3, "rb") as image_file:
-        encoded_image = base64.b64encode(image_file.read()).decode()
-    st.markdown(
-        f"""
-        <h1 style="display: flex; align-items: center;">
-            <img src="data:image/jpeg;base64,{encoded_image}" width="500" style="margin-right:100px;">
-        </h1>
-        """,
-        unsafe_allow_html=True
-    )
-    
-    st.markdown("***Factors affecting in Murugha Mata***")
+    # Display main image
+    img = "images/murugha_main.jpg"
+    try:
+        with open(img, "rb") as f:
+            encoded = base64.b64encode(f.read()).decode()
+        st.markdown(
+            f'<img src="data:image/jpeg;base64,{encoded}" width="500">',
+            unsafe_allow_html=True
+        )
+    except FileNotFoundError:
+        st.warning(f"Image not found: {img}")
 
-    p1 = images/muruga mutt.jpg
-    p2 = images/IMG-20250703-WA0010.jpg
-    p3 = images/IMG-20250703-WA0034.jpg
+    st.markdown("***Key Highlights***")
+    st.markdown("""
+    - Major center of Lingayat faith in Karnataka  
+    - Known for community services, education, and spiritual activities  
+    - Historic lineage and significant influence in regional culture  
+    """)
 
-    # Create 3 columns
-    col1, col2 , col3 = st.columns(3)
+    st.markdown("***Recent Status***")
+    st.write("""
+    The Matha remains active and influential, with ongoing programs in education and rural development.
+    """)
 
-    # Display images with same width in each column
-    with col1:
-        st.image(PILImage.open(p1), caption="Murugha Mata", use_container_width=True)
-    with col2:
-        st.image(PILImage.open(p2), caption="Proposed Entry & Exit gate", use_container_width=True)
-    with col3:
-        st.image(PILImage.open(p3), caption="Growth of aquatic plants", use_container_width=True)
-    
+    # Optional additional images
+    p1 = "images/murugha_event1.jpg"
+    p2 = "images/murugha_event2.jpg"
+    p3 = "images/murugha_event3.jpg"
+
+    col1, col2, col3 = st.columns(3)
+    for img_path, col in zip([p1, p2, p3], [col1, col2, col3]):
+        try:
+            with col:
+                st.image(PILImage.open(img_path), caption=img_path.split("/")[-1], use_container_width=True)
+        except FileNotFoundError:
+            with col:
+                st.warning(f"Missing image: {img_path}")
