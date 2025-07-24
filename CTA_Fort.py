@@ -23,7 +23,7 @@ Other Structures
 ''')
 
     # ✅ Display Map
-    Cta_Map = r"C:\Users\harshith maradi b r\Documents\Downloads\Prohibited\web streamlit\personal finance tracker\personal finance tracker\images\IMG-20250703-WA0007.jpg"
+    Cta_Map = images/IMG-20250703-WA0007.jpg
     with open(Cta_Map, "rb") as image_file:
         encoded_image = base64.b64encode(image_file.read()).decode()
     st.markdown(
