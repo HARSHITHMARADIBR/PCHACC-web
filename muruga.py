@@ -18,7 +18,7 @@ Now the 27th Pontiff of the order Sri Shivamurthy Murugha Rajendra Sharanaru pre
 Sri Jagadguru Murugharajendra Vidyapeetha, was established in 1964. It was founded by His Holiness Jagadguru Sri Sri Mallikarjua Murugharajendra Mahaswamiji, the then pontiff of the mutt. The mutt's purpose is to provide education and cultural institutions to the common people in rural and remote areas, particularly those in Chitradurga. 
  ''')
     
-    muru1=r"C:\Users\harshith maradi b r\Documents\Downloads\Prohibited\web streamlit\personal finance tracker\personal finance tracker\images\IMG-20250703-WA0015.jpg"
+    muru1=images/IMG-20250703-WA0015.jpg
     with open(muru1, "rb") as image_file:
         encoded_image = base64.b64encode(image_file.read()).decode()
     st.markdown(
