@@ -57,7 +57,7 @@ Other Structures
         # ✅ Display Photo Gallery
     pic1 = images/IMG-20250703-WA0037.jpg
     pic2 = images/IMG-20250703-WA0024.jpg
-    pic3 = r"C:\Users\harshith maradi b r\Documents\Downloads\Prohibited\web streamlit\personal finance tracker\personal finance tracker\images\IMG-20250703-WA0011.jpg"
+    pic3 = images/IMG-20250703-WA0011.jpg
     pic4 = r"C:\Users\harshith maradi b r\Documents\Downloads\Prohibited\web streamlit\personal finance tracker\personal finance tracker\images\IMG-20250703-WA0027.jpg"
     pic5 = r"C:\Users\harshith maradi b r\Documents\Downloads\Prohibited\web streamlit\personal finance tracker\personal finance tracker\images\IMG-20250703-WA0042.jpg"
 
