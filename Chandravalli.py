@@ -57,7 +57,7 @@ def chandravalli_details():
     # --- Grid of 4 Images ---
     p1 = images/chandravalli.jpeg.jpg
     p2 = images/IMG-20250703-WA0032.jpg
-    p3 = r"C:\Users\harshith maradi b r\Documents\Downloads\Prohibited\web streamlit\personal finance tracker\personal finance tracker\images\IMG-20250703-WA0014.jpg"
+    p3 = images/IMG-20250703-WA0014.jpg
     p4 = r"C:\Users\harshith maradi b r\Documents\Downloads\Prohibited\web streamlit\personal finance tracker\personal finance tracker\images\IMG-20250703-WA0031.jpg"
 
     col1, col2, col3, col4 = st.columns(4)
