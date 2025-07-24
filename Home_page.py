@@ -1,7 +1,6 @@
-from tkinter import Image
+
 import streamlit as st
 from PIL import Image
-import streamlit as st
 import base64
 
 from Chandravalli import chandravalli_details 
