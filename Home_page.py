@@ -22,7 +22,7 @@ def home_process():
         elif page == "Proposal":
             st.session_state.page = "proposal"
 
-        image_path = r"C:/Users/harshith maradi b r/Documents/Downloads/Prohibited/web streamlit/personal finance tracker/personal finance tracker/images/Logo.jpg"
+        image_path = images/Logo.jpg
         with open(image_path, "rb") as image_file:
             encoded_image = base64.b64encode(image_file.read()).decode()
 
