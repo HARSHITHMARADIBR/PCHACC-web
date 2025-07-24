@@ -37,7 +37,7 @@ def chandravalli_details():
     st.markdown("***Landuse Map of Chandravalli***")
 
     # --- Image 2: Landuse Table ---
-    tablec1 = r"C:\Users\harshith maradi b r\Documents\Downloads\Prohibited\web streamlit\personal finance tracker\personal finance tracker\images\IMG-20250703-WA0013.jpg"
+    tablec1 = images/IMG-20250703-WA0013.jpg
     with open(tablec1, "rb") as image_file:
         encoded_image = base64.b64encode(image_file.read()).decode()
     st.markdown(f"""
