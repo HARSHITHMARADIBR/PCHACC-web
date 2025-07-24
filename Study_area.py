@@ -19,7 +19,7 @@ def study_area():
     )
     
     st.markdown("***Key Map of Chitradurga***")    
-    demography_details=r"C:\Users\harshith maradi b r\Documents\Downloads\Prohibited\web streamlit\personal finance tracker\personal finance tracker\images\IMG-20250703-WA0016.jpg"
+    demography_details=images/IMG-20250703-WA0016.jpg
     with open(demography_details, "rb") as image_file:
         encoded_image = base64.b64encode(image_file.read()).decode()
     st.markdown(
