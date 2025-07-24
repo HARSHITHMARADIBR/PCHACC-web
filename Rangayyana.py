@@ -60,8 +60,7 @@ def rangayyana_baagilu():
 
     p1 = images/Rangayyana Baagilu.png
     p2 = images/IMG-20250703-WA0035.jpg
-    p3 = r"C:\Users\harshith maradi b r\Documents\Downloads\Prohibited\web streamlit\personal finance tracker\personal finance tracker\images\IMG-20250703-WA0020.jpg"
-
+    p3 = images/IMG-20250703-WA0020.jpg
     # Create 3 columns
     col1, col2, col3 = st.columns(3)
 
