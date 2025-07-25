@@ -66,9 +66,9 @@ def murugha_mata():
     """)
 
     # Optional additional images
-    p1 = "images/murugha_event1.jpg"
-    p2 = "images/murugha_event2.jpg"
-    p3 = "images/murugha_event3.jpg"
+    p1 = "images/muruga mutt.jpg"
+    p2 = "images/IMG-20250703-WA0010.jpg"
+    p3 = "images/IMG-20250703-WA0034.jpg"
 
     col1, col2, col3 = st.columns(3)
     for img_path, col in zip([p1, p2, p3], [col1, col2, col3]):
