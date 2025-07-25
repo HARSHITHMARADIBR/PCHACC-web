@@ -15,7 +15,7 @@ def uchhangellamma_temple():
     st.write('''The temple stands as a testimony to the cultural and spiritual heritage of the region. Its traditional architecture and religious significance attract both tourists and devotees alike.''')
 
     # Image 1
-    img1 = "images/IMG-20250703-WA0011.jpg"
+    img1 = "images/IMG-20250703-WA0044.jpg"
     try:
         with open(img1, "rb") as image_file:
             encoded_image = base64.b64encode(image_file.read()).decode()
