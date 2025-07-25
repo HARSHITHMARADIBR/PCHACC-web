@@ -30,7 +30,7 @@ def murugha_mata():
         st.warning(f"Image not found: {img}")
     img2 = "images/IMG-20250703-WA0030.jpg"
     try:
-        with open(im2, "rb") as f:
+        with open(img2, "rb") as f:
             encoded = base64.b64encode(f.read()).decode()
         st.markdown(
             f'<img src="data:image/jpeg;base64,{encoded}" width="500">',
