@@ -82,7 +82,7 @@ def barageramma_temple():
     """)
 
     # Display additional factor images in columns
-    p1 = "images/barageramma_factor1.jpg"
+    p1 = "images/baregeramma temple.jpeg.jpg"
     p2 = "images/barageramma_factor2.jpg"
     p3 = "images/barageramma_factor3.jpg"
 
