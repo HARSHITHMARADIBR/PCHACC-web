@@ -28,6 +28,7 @@ def murugha_mata():
         )
     except FileNotFoundError:
         st.warning(f"Image not found: {img}")
+    st.markdown("***Landuse Map of Murugha Mata***")  
     img2 = "images/IMG-20250703-WA0030.jpg"
     try:
         with open(img2, "rb") as f:
@@ -38,7 +39,8 @@ def murugha_mata():
         )
     except FileNotFoundError:
         st.warning(f"Image not found: {img}")
-
+    st.markdown("***Landuse Table of Murugha Mata***")
+    
     img3 = "images/IMG-20250703-WA0033.jpg"
     try:
         with open(img3, "rb") as f:
@@ -49,6 +51,7 @@ def murugha_mata():
         )
     except FileNotFoundError:
         st.warning(f"Image not found: {img}")
+    st.markdown("***Factors affecting in Murugha Mata***")
 
     st.markdown("***Key Highlights***")
     st.markdown("""
