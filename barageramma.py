@@ -28,7 +28,8 @@ def barageramma_temple():
         """,
         unsafe_allow_html=True
     )
-
+    st.markdown("***Landuse Map of Barageramma Temple***")
+    
     bara2="images/IMG-20250703-WA0050.jpg"
     with open(bara2, "rb") as image_file:
         encoded_image = base64.b64encode(image_file.read()).decode()
@@ -40,9 +41,8 @@ def barageramma_temple():
         """,
         unsafe_allow_html=True
     )
-    
     st.markdown("***Landuse Table of Barageramma Temple***")
-    st.markdown("***Landuse Map of Barageramma Temple***")
+    
 
     # Display main image
     img = "images/barageramma_main.jpg"
