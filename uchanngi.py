@@ -69,7 +69,7 @@ def uchhangellamma_temple():
     st.markdown("***Factors affecting Uchhangellamma Temple Area***")
 
     # Grid Images
-    p1 = "images/Uchhangellamma_Temple.png"
+    p1 = "images/uchhangellamma temple.png"
     p2 = "images/IMG-20250703-WA0039.jpg"
 
     col1, col2 = st.columns(2)
