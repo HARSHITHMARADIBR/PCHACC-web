@@ -74,8 +74,6 @@ def uchhangellamma_temple():
 
     col1, col2 = st.columns(2)
 
-    tcol1, col2 = st.columns(2)
-
     try:
         with col1:
             st.image(PILImage.open(p1), caption="Uchhangellamma Temple", use_container_width=True)
