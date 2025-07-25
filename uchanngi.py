@@ -74,8 +74,10 @@ def uchhangellamma_temple():
 
     col1, col2 = st.columns(2)
 
-    with col1:
-        st.image(PILImage.open(p1), caption="Barageramma Temple", use_container_width=True)
+    try:
+    st.image(PILImage.open(p1), caption="Barageramma Temple", use_container_width=True)
+except FileNotFoundError:
+    st.warning(f"Missing image file: {p1}")
 
     try:
         with col2:
