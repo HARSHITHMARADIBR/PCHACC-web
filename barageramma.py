@@ -17,6 +17,20 @@ def barageramma_temple():
     st.write("**Location:** Chitradurga City, Karnataka")
     st.write("**Coordinates:** 14.2230° N, 76.3980° E")
 
+    bara1=
+    with open(bara1, "rb") as image_file:
+        encoded_image = base64.b64encode(image_file.read()).decode()
+    st.markdown(
+        f"""
+        <h1 style="display: flex; align-items: center;">
+            <img src="data:image/jpeg;base64,{encoded_image}" width="500" style="margin-right:100px;">
+        </h1>
+        """,
+        unsafe_allow_html=True
+    )
+    
+    st.markdown("***Landuse Map of Barageramma Temple***")
+
     # Display main image
     img = "images/barageramma_main.jpg"
     try:
