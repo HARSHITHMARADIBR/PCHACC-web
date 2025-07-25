@@ -51,7 +51,7 @@ def uchhangellamma_temple():
     st.markdown("***Landuse Table of Uchhangellamma Temple***")
 
     # Image 3
-    img3 = "images/IMG-20250703-WA0025.jpg"
+    img3 = "images/IMG-20250703-WA0017.jpg"
     try:
         with open(img3, "rb") as image_file:
             encoded_image = base64.b64encode(image_file.read()).decode()
