@@ -73,13 +73,14 @@ def uchhangellamma_temple():
     p2 = "images/IMG-20250703-WA0039.jpg"
     p3 = "images/IMG-20250703-WA0022.jpg"
 
-    col1, col2= st.columns(2)
+    col1, col2 = st.columns(2)
+
     try:
         with col1:
             st.image(PILImage.open(p1), caption="Uchhangellamma Temple", use_container_width=True)
     except FileNotFoundError:
         with col1:
-        s    t.warning(f"Missing: {p1}")
+            st.warning(f"Missing: {p1}")
 
     try:
         with col2:
@@ -87,5 +88,3 @@ def uchhangellamma_temple():
     except FileNotFoundError:
         with col2:
             st.warning(f"Missing: {p2}")
-
-    
