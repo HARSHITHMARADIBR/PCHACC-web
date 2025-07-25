@@ -17,7 +17,7 @@ def barageramma_temple():
     st.write("**Location:** Chitradurga City, Karnataka")
     st.write("**Coordinates:** 14.2230° N, 76.3980° E")
 
-    bara1=
+    bara1="images/IMG-20250703-WA0041.jpg"
     with open(bara1, "rb") as image_file:
         encoded_image = base64.b64encode(image_file.read()).decode()
     st.markdown(
