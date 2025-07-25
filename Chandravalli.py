@@ -28,7 +28,7 @@ def chandravalli_details():
     """)
 
     # --- Image 1: Landuse Map ---
-    cndrv_map = images/IMG-20250703-WA0047.jpg
+    cndrv_map = "images/IMG-20250703-WA0047.jpg"
     with open(cndrv_map, "rb") as image_file:
         encoded_image = base64.b64encode(image_file.read()).decode()
     st.markdown(f"""
@@ -37,7 +37,7 @@ def chandravalli_details():
     st.markdown("***Landuse Map of Chandravalli***")
 
     # --- Image 2: Landuse Table ---
-    tablec1 = images/IMG-20250703-WA0013.jpg
+    tablec1 = "images/IMG-20250703-WA0013.jpg"
     with open(tablec1, "rb") as image_file:
         encoded_image = base64.b64encode(image_file.read()).decode()
     st.markdown(f"""
@@ -46,7 +46,7 @@ def chandravalli_details():
     st.markdown("***Landuse Table of Chandravalli***")
 
     # --- Image 3: Factors Affecting ---
-    tablec2 = images/IMG-20250703-WA0026.jpg
+    tablec2 = "images/IMG-20250703-WA0026.jpg"
     with open(tablec2, "rb") as image_file:
         encoded_image = base64.b64encode(image_file.read()).decode()
     st.markdown(f"""
@@ -55,10 +55,10 @@ def chandravalli_details():
     st.markdown("***Factors Affecting in Chandravalli***")
 
     # --- Grid of 4 Images ---
-    p1 = images/chandravalli.jpeg.jpg
-    p2 = images/IMG-20250703-WA0032.jpg
-    p3 = images/IMG-20250703-WA0014.jpg
-    p4 = images/IMG-20250703-WA0031.jpg
+    p1 = "images/chandravalli.jpeg.jpg"
+    p2 = "images/IMG-20250703-WA0032.jpg"
+    p3 = "images/IMG-20250703-WA0014.jpg"
+    p4 = "images/IMG-20250703-WA0031.jpg"
 
     col1, col2, col3, col4 = st.columns(4)
 
