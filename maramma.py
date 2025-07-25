@@ -12,7 +12,7 @@ def maramma_temple():
 69CM+PR4, Nehru Nagar, Chitradurga, Karnataka 577501, India
  ''')
     
-    mara1=images/IMG-20250703-WA0018.jpg
+    mara1="images/IMG-20250703-WA0018.jpg"
     with open(mara1, "rb") as image_file:
         encoded_image = base64.b64encode(image_file.read()).decode()
     st.markdown(
@@ -26,7 +26,7 @@ def maramma_temple():
     
     st.markdown("***Landuse Map of Maramma Temple***")
 
-    mara2=images/IMG-20250703-WA0028.jpg
+    mara2="images/IMG-20250703-WA0028.jpg"
     with open(mara2, "rb") as image_file:
         encoded_image = base64.b64encode(image_file.read()).decode()
     st.markdown(
@@ -40,7 +40,7 @@ def maramma_temple():
     
     st.markdown("***Landuse Table of Maramma Temple***")
 
-    mafra3=images/IMG-20250703-WA0038.jpg
+    mafra3="images/IMG-20250703-WA0038.jpg"
     with open(mafra3, "rb") as image_file:
         encoded_image = base64.b64encode(image_file.read()).decode()
     st.markdown(
@@ -54,8 +54,8 @@ def maramma_temple():
     
     st.markdown("***Factors affecting in Maramma Temple***")
 
-    p1 = images/IMG-20250703-WA0036.jpg
-    p2 = images/IMG-20250703-WA0025.jpg
+    p1 = "images/IMG-20250703-WA0036.jpg"
+    p2 = "images/IMG-20250703-WA0025.jpg"
 
     # Create 3 columns
     col1, col2 = st.columns(2)
