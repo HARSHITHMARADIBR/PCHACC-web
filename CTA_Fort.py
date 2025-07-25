@@ -23,7 +23,7 @@ Other Structures
 ''')
 
     # ✅ Display Map
-    Cta_Map = images/IMG-20250703-WA0007.jpg
+    Cta_Map = "images/IMG-20250703-WA0007.jpg"
     with open(Cta_Map, "rb") as image_file:
         encoded_image = base64.b64encode(image_file.read()).decode()
     st.markdown(
@@ -44,7 +44,7 @@ Other Structures
     st.markdown("***Land Use Table Of Chitradurga Fort***") 
 
     # ✅ Display Table 2
-    table2 = images/IMG-20250703-WA0021.jpg
+    table2 = "images/IMG-20250703-WA0021.jpg"
     with open(table2, "rb") as image_file:
         encoded_image = base64.b64encode(image_file.read()).decode()
     st.markdown(
@@ -55,11 +55,11 @@ Other Structures
 
     # ✅ Display Photo Gallery
         # ✅ Display Photo Gallery
-    pic1 = images/IMG-20250703-WA0037.jpg
-    pic2 = images/IMG-20250703-WA0024.jpg
-    pic3 = images/IMG-20250703-WA0011.jpg
-    pic4 = images/IMG-20250703-WA0027.jpg
-    pic5 = images/IMG-20250703-WA0042.jpg
+    pic1 = "images/IMG-20250703-WA0037.jpg"
+    pic2 = "images/IMG-20250703-WA0024.jpg"
+    pic3 = "images/IMG-20250703-WA0011.jpg"
+    pic4 = "images/IMG-20250703-WA0027.jpg"
+    pic5 = "images/IMG-20250703-WA0042.jpg"
 
     col1, col2, col3, col4, col5 = st.columns(5)
 
