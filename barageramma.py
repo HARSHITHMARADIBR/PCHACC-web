@@ -28,7 +28,20 @@ def barageramma_temple():
         """,
         unsafe_allow_html=True
     )
+
+    bara2=r"C:\Users\harshith maradi b r\Documents\Downloads\Prohibited\web streamlit\personal finance tracker\personal finance tracker\images\IMG-20250703-WA0050.jpg"
+    with open(bara2, "rb") as image_file:
+        encoded_image = base64.b64encode(image_file.read()).decode()
+    st.markdown(
+        f"""
+        <h1 style="display: flex; align-items: center;">
+            <img src="data:image/jpeg;base64,{encoded_image}" width="500" style="margin-right:100px;">
+        </h1>
+        """,
+        unsafe_allow_html=True
+    )
     
+    st.markdown("***Landuse Table of Barageramma Temple***")
     st.markdown("***Landuse Map of Barageramma Temple***")
 
     # Display main image
