@@ -70,10 +70,10 @@ def uchhangellamma_temple():
 
     # Grid Images
     p1 = "images/Uchhangellamma_Temple.png"
-    p2 = "images/IMG-20250703-WA0037.jpg"
+    p2 = "images/IMG-20250703-WA0039.jpg"
     p3 = "images/IMG-20250703-WA0022.jpg"
 
-    col1, col2, col3 = st.columns(3)
+    col1, col2= st.columns(2)
     try:
         with col1:
             st.image(PILImage.open(p1), caption="Uchhangellamma Temple", use_container_width=True)
@@ -88,9 +88,4 @@ def uchhangellamma_temple():
         with col2:
             st.warning(f"Missing: {p2}")
 
-    try:
-        with col3:
-            st.image(PILImage.open(p3), caption="Encroachment near temple", use_container_width=True)
-    except FileNotFoundError:
-        with col3:
-            st.warning(f"Missing: {p3}")
+    
