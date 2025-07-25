@@ -58,16 +58,7 @@ def barageramma_temple():
     st.markdown("***Factors affecting in Barageramma Temple***")
 
     # Display main image
-    img = "images/barageramma_main.jpg"
-    try:
-        with open(img, "rb") as f:
-            encoded = base64.b64encode(f.read()).decode()
-        st.markdown(
-            f'<img src="data:image/jpeg;base64,{encoded}" width="500">',
-            unsafe_allow_html=True
-        )
-    except FileNotFoundError:
-        st.warning(f"Image not found: {img}")
+
 
     st.markdown("***Heritage Site Details***")
     st.markdown("""
