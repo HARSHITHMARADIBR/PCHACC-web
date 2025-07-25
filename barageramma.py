@@ -86,7 +86,7 @@ def barageramma_temple():
     p2 = "images/IMG-20250703-WA0039.jpg"
 
     col1, col2 = st.columns(2)
-    for img_path, col in zip([p1, p2, p3], [col1, col2]):
+    for img_path, col in zip([p1, p2], [col1, col2]):
         try:
             with col:
                 st.image(PILImage.open(img_path), caption=img_path.split("/")[-1], use_container_width=True)
